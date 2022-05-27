@@ -1,0 +1,8 @@
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100vh;
+  grid-gap: 1px;
+  overflow-y: scroll;
+}

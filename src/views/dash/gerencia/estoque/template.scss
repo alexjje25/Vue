@@ -1,0 +1,34 @@
+.painelSelect{
+  text-align: center;
+}
+select.selectModule {
+  margin: 5px 10px;
+  display: inline-block;
+  background-color: rgba(57, 134, 71, 1);
+  color: white;
+  border: none;
+  opacity: 1;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 15px;
+  min-width: 400px;
+  text-align-last: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  option{
+    text-align: center;
+    text-align-last: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    padding:10px;
+  }
+}
+input:disabled{
+  background-color:rgb(220,220,220);
+}
+.modules {
+  padding: 0px;
+}

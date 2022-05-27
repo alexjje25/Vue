@@ -1,0 +1,61 @@
+.item {
+  width: 200px;
+  font-weight: lighter;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 4px;
+  box-shadow: 0px 0px 10px rgba(62,145,23, 0.5);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "vimagem" "contain";
+  .contain {
+    grid-area: contain;
+    letter-spacing: 0px; //update 29/05
+    .informacao {
+      padding: 5px;
+    }
+    .titulo {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .conteudo {
+      font-weight: 600;
+      padding: 0px;
+      font-size: 14px;
+    }
+  }
+  .imagem {
+    grid-area: vimagem;
+  }
+  & > div {
+    padding: 5px;
+  }
+  .refUser {
+    padding: 4px 6px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: 100;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .descricao {
+    p {
+      margin: 0px;
+      display: block;
+      padding: 4px;
+    }
+    padding: 4px;
+  }
+  img {
+    width: 150px;
+    height: 100px;
+  }
+  .gps {
+    font-size: 10px;
+    text-align: center;
+  }
+}

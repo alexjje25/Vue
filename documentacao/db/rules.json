@@ -1,0 +1,30 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "$alguma": {
+      ".indexOn": ["idFazenda"]
+    },
+    "Tarefas": {
+      ".indexOn": ["idFazenda"]
+    },
+    "Talhoes": {
+      ".indexOn": ["idFazenda", "idProprietario"]
+    },
+    "users": {
+      ".indexOn": ["type"]
+    },
+    "Funcionarios": {
+      ".indexOn": ["idFazenda", "codigo"]
+    },
+    "MonitoramentosPragas": {
+      ".indexOn": ["idFazenda", "idFuncionario"]
+    },
+    "MonitoramentosDoencas": {
+      ".indexOn": ["idFazenda", "idFuncionario"]
+    },
+    "MonitoramentosArmadilhas": {
+      ".indexOn": ["idFazenda", "idFuncionario"]
+    }
+  }
+}

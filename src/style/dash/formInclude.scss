@@ -1,0 +1,43 @@
+.form {
+  padding: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0px auto;
+  .grid {
+    display: grid;
+    &.g2 {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 4px;
+    }
+  }
+}
+.scopo {
+  padding: 6px;
+  .titulo {
+    padding: 6px;
+    color: #3E9117;
+  }
+  .include {
+    input,
+    select,
+    textarea {
+      width: 80%;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+  }
+}
+
+.dangerValid {
+  background-color: rgba(225, 30, 30, 1) !important;
+  color: white;
+}
+.requiredValid {
+  background-color: rgba(255, 200, 0, 0.7) !important;
+}

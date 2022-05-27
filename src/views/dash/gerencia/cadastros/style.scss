@@ -1,0 +1,36 @@
+.form {
+  padding: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 15%;
+}
+
+.scopo {
+  & > div {
+    i {
+      color: red;
+      font-size: 10px;
+      display: inline;
+    }
+    &:nth-child(1) {
+      padding: 4px;
+    }
+    &:nth-child(2) {
+      input {
+        width: 80%;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        //background-color: rgba(220, 220, 220, 0.5);
+      }
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  &.g2 {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4px;
+  }
+}

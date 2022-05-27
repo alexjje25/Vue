@@ -1,0 +1,106 @@
+{
+  "name": "rurall",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "cypress": "npx cypress open",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "agora": "firebase deploy --only hosting",
+    "functionDeploy": "firebase deploy --only functions",
+    "functionServer": "firebase emulators:start --only functions",
+    "hostingDeploy": "firebase deploy --only hosting",
+    "postagora": "vue-cli-service serve",
+    "preagora": "vue-cli-service build",
+    "servehot": "vue-cli-service serve --host localhost",
+    "test": "cypress open"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@sentry/browser": "^5.19.1",
+    "@sentry/integrations": "^5.19.1",
+    "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
+    "core-js": "^3.4.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "firebase": "^7.7.0",
+    "global": "^4.4.0",
+    "jquery": "^3.6.0",
+    "leaflet": "^1.8.0",
+    "mapbox-gl": "^1.10.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "register-service-worker": "^1.6.2",
+    "v-calendar": "^1.0.0-beta.23",
+    "vee-validate": "^3.2.5",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.5.0",
+    "vue-mapbox": "^0.4.1",
+    "vue-router": "^3.1.3",
+    "vue2-leaflet": "^2.7.1",
+    "vuejs-datepicker": "^1.6.2",
+    "vuetify": "^2.2.11",
+    "vuex": "^3.1.2",
+    "wellknown": "^0.5.0"
+  },
+  "devDependencies": {
+    "@firebase/testing": "^0.19.0",
+    "@vue/cli-plugin-babel": "~4.3.1",
+    "@vue/cli-plugin-e2e-cypress": "^4.4.6",
+    "@vue/cli-plugin-eslint": "~4.3.1",
+    "@vue/cli-plugin-pwa": "~4.3.1",
+    "@vue/cli-plugin-router": "~4.3.1",
+    "@vue/cli-plugin-vuex": "~4.3.1",
+    "@vue/cli-service": "~4.3.1",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/server-test-utils": "^1.0.3",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "deepmerge": "^4.2.2",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "fibers": "^5.0.0",
+    "jest": "^26.1.0",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^1.19.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-vuetify": "~2.0.7",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.3.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "@vue/prettier",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

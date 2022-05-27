@@ -1,0 +1,70 @@
+.icone {
+  width: 30px;
+}
+.uiMap {
+  position: absolute;
+  z-index: 5;
+  .listafloat {
+    //padding: 5px;
+    //background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    overflow: auto;
+    max-height: 600px;
+    .item {
+      padding: 5px;
+      margin: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      max-width: 40vw;
+    }
+  }
+}
+.uperCOORD {
+  display: inline-block;
+  position: absolute;
+  z-index: 5;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+#mapa {
+  width: 100%;
+  height: 700px;
+}
+.FooterMap {
+  text-align: left;
+  .FooterMapImage {
+    width: 400px;
+  }
+}
+.zoomOption {
+  button.btn {
+    padding: 10px 14px;
+    background-color: #1E5100;
+    color: white;
+    display: inline-block;
+    margin: 4px;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .title {
+    padding: 10px 14px;
+    background-color: #3DCE00;
+    color: white;
+    font-size: small;
+    display: inline-block;
+    margin: 4px;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  #mapa {
+    width: 1000px;
+    height: 1000px;
+  }
+}

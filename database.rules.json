@@ -1,0 +1,127 @@
+{
+  "rules": {
+    ".read": true,
+    "users": {
+      ".indexOn": ["type", "idFazenda"],
+      ".write": "auth != null"
+    },
+    "Alertas": {
+      ".write": "auth != null && root.child('users').child(auth.uid).child('nivel').val() == 99 && root.child('users').child(auth.uid).child('type').val() == 'admin'",
+      ".read": true
+    },
+    "Armadilhas": {},
+    "Arquivado": {
+      ".read": "auth != null",
+      "Veiculos": {
+        ".indexOn": ["idFazenda"]
+      }
+    },
+    "Clientes": {
+      "$cliente": {
+        ".indexOn": ["idFazenda"],
+        ".read": "root.child('users').child(auth.uid).child('nivel').val() == 99 || "
+      }
+    },
+    "ColheitaItem": {
+      ".indexOn": ["idFazenda"]
+    },
+    "Colors": {},
+    "Daninhas": {
+      ".read": true,
+      ".write": "auth != null && root.child('users').child(auth.uid).child('nivel').val() == 99 && root.child('users').child(auth.uid).child('type').val() == 'admin'"
+    },
+    "Fazendas": {
+      ".indexOn": ["idFazenda"]
+    },
+    "FuncionariosArquivados": {},
+    "GpsColaborador": {},
+    "MonitoramentosColheita": {},
+    "PreCadastro:": {
+      "Schol": {
+        ".write": true
+      }
+    },
+    "Representantes": {},
+    "SuporteEnviados": {},
+    "SuporteSetores": {},
+    "listenErrors": {},
+    "Pragas": {
+      ".read": true,
+      ".write": "auth != null && root.child('users').child(auth.uid).child('nivel').val() == 99 && root.child('users').child(auth.uid).child('type').val() == 'admin'"
+    },
+    "PontoFuncionario": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Fornecedores": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Cultivar": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Setores": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Producoes": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Estoque": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "EstoqueLog": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Veiculos": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Aplicacoes": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "AlertaProducao": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Tarefas": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "Talhoes": {
+      ".indexOn": ["idFazenda", "idProprietario"],
+      ".write": "auth != null"
+    },
+
+    "Funcionarios": {
+      ".indexOn": ["idFazenda", "codigo"],
+      ".write": "auth != null",
+      ".read": "auth != null"
+    },
+    "MonitoramentosPragas": {
+      ".indexOn": ["idFazenda"],
+      ".write": "auth != null"
+    },
+    "MonitoramentosDoencas": {
+      ".write": "auth != null",
+      ".indexOn": ["idFazenda"]
+    },
+    "MonitoramentosDaninhas": {
+      ".write": "auth != null",
+      ".indexOn": ["idFazenda"]
+    },
+    "MonitoramentosArmadilhas": {
+      ".write": "auth != null",
+      ".indexOn": ["idFazenda"]
+    },
+    "ListaArmadilhas": {
+      ".write": "auth != null",
+      ".indexOn": ["idFazenda"]
+    }
+  }
+}

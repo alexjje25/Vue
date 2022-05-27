@@ -1,0 +1,113 @@
+.btnMonitor {
+  background-color: #db9600;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.center {
+  text-align: center;
+}
+.item {
+  width: 200px; // refined
+  font-weight: lighter;
+  margin: 4px;
+  border-radius: 4px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 0px 4px rgba(62,145,23, 0.5);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "vimagem" "contain";
+  .expo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 5px;
+    background-color: #123301;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    .imagemTrap {
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      padding-top: 5px;
+      padding-left: 5px;
+      img {
+        width: 45px;
+        height: auto;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+      }
+    }
+    .titulo {
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .contain {
+    grid-area: contain;
+    letter-spacing: 1px;
+    .informacao {
+      padding: 5px;
+    }
+    .titulo {
+      text-transform: uppercase;
+      color: silver;
+    }
+    .conteudo {
+      background-color: rgba(220, 220, 220, 1);
+      color: rgb(30,81,0);
+      font-weight: 600;
+      font-size: 11px;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 4px;
+    }
+  }
+  .imagem {
+    grid-area: vimagem;
+  }
+  & > div {
+    padding: 5px;
+  }
+  .refUser {
+    padding: 4px 6px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: 100;
+    font-size: 11px;
+    border: none;
+    border-radius: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .descricao {
+    p {
+      margin: 0px;
+      display: block;
+      padding: 4px;
+    }
+    padding: 4px;
+  }
+  img {
+    width: 150px;
+    height: 100px;
+  }
+}

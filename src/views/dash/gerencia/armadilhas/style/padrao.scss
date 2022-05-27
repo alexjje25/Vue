@@ -1,0 +1,44 @@
+.opacity {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+.impressora {
+  width: 50px;
+  height: 50px;
+}
+.monitoramentoArmadilhas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "content mapa";
+  @media screen and (max-width: 500px){
+    grid-template-areas: "content content" "mapa mapa";
+  }
+  .contentBOX {
+    grid-area: content;
+  }
+  .mapa {
+    grid-area: mapa;
+    text-align: right;
+    .mapboxgl-map {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+.line {
+  display: inline-block;
+}
+.pragaCount {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 10px;
+  background-color: rgba(50, 90, 50, 1);
+  color: white;
+  .sizeUP {
+    font-size: 30px;
+    font-weight: 900;
+  }
+}

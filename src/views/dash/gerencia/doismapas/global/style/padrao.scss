@@ -1,0 +1,48 @@
+.opacity {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+.impressora {
+  width: 10px;
+  height: 10px;
+}
+.watchPragas,
+.watchDoencas,
+.watchDaninhas {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "content mapa";
+  .contentBOX {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    .boxPadrao {
+      width: 100p;
+      max-width: 90%;
+      margin: 10px auto;
+    }
+  }
+  .mapa {
+    grid-area: mapa;
+    grid-template-columns: repeat(8, 1fr);
+    max-width: 48vw;
+    gap: 10px;
+    .mapboxgl-map {
+      text-align: center;
+      margin: 0 auto;
+      margin-right: 10px;
+    }
+  }
+}
+.line {
+  display: inline-block;
+}
+.boxPadrao {
+  margin: 10px;
+  &.g4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+}

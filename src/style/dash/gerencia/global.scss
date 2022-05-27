@@ -1,0 +1,203 @@
+@import "@/style/dash/global/cores.scss";
+$cor-titulos: #898989;
+
+//15/04/2020
+.rootRemove {
+  background-color: rgba(200, 15, 15, 1);
+  color: white;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 4px;
+  border: none;
+}
+// old
+.btnPadrao {
+  padding: 6px 8px;
+  font-size: 12px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  &:hover {
+    cursor: pointer;
+  }
+  &.warning {
+    background-color: rgb(207, 124, 21);
+  }
+  &.sucess {
+    background-color: rgb(57, 134, 71);
+  }
+}
+.tip {
+  background-color: rgba(10, 70, 100, 0.2);
+  color: rgb(10, 70, 100);
+  padding: 15px;
+  border-radius: 4px;
+  margin: 2px;
+  &.danger {
+    background-color: rgba(100, 20, 10, 0.2);
+    color: rgb(100, 20, 10);
+  }
+}
+.buscador {
+  padding: 10px;
+  display: grid;
+  grid-gap: 5px;
+  align-items: center;
+  align-content: center;
+  &.g2 {
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &.g3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &.g4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 1280px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 650px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &.g5 {
+    grid-template-columns: auto auto auto auto 1fr;
+  }
+  &.g6 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+input,
+select,
+textarea {
+  border: none;
+  padding: 10px 8px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(70, 70, 70, 0.2);
+  color: rgb(50, 50, 50);
+}
+select {
+  max-width: 200px;
+}
+
+.tituloContent {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 10px;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  color: $cor-titulos;
+  border-bottom: 2px solid rgba(50, 50, 50, 0.1);
+  text-align: center;
+}
+
+.menuExtra {
+  padding: 20px;
+  a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 1);
+    border-bottom: 2px solid rgba(50, 50, 50, 0.2);
+    margin-left: 2px;
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+    text-transform: uppercase;
+    &.router-link-active {
+      border-bottom: 2px solid rgb(0, 136, 64);
+    }
+  }
+}
+
+.lista {
+  .item {
+    .cc {
+      .c1 {
+        display: inline-block;
+        padding: 8px;
+        text-transform: uppercase;
+        border: 1px solid silver;
+        border-right: none;
+        font-weight: 500;
+        background-color: rgba(200, 200, 200, 0.5);
+      }
+      .c2 {
+        display: inline-block;
+        padding: 8px;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid silver;
+        border-left: none;
+        color: rgb(70, 70, 70);
+      }
+    }
+  }
+}
+
+.formulario {
+  .ff {
+    margin: 2px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    .f1 {
+      text-align: right;
+      padding: 8px;
+      min-width: 100px;
+    }
+    .f2 {
+      text-align: left;
+    }
+  }
+}
+
+.UImenu {
+  padding: 10px;
+  display: grid;
+  max-width: 700px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  .link {
+    text-align: center;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(40, 40, 40, 0.3);
+    //display: inline-block;
+    background-color: rgb(57, 134, 71);
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 8px;
+    &.icon {
+      display: grid;
+      grid-template-columns: auto 1fr;
+    }
+    img {
+      display: inline-block;
+      width: auto;
+      height: 30px;
+      margin: 5px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

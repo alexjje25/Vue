@@ -1,0 +1,39 @@
+.lista{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  .item{
+    padding:16px;
+    display: inline-table;
+    float: left;
+    .header{
+      .titulo{
+        text-align: center;
+        font-weight: 500;
+      }
+      .conteudo{
+        text-align: center;
+        font-weight: 900;
+      }
+    }
+    .sub{
+      .titulo{
+        text-align: center;
+        font-weight: 600;
+      }
+      .conteudo{
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+    .sub1{
+      padding-left:4px;
+    }
+    .sub2{
+      padding:10px;
+    }
+    .sub3{
+      padding-left:4px;
+    }
+  }
+}
